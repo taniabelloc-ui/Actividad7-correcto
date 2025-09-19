@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página web</title>
+</head>
+<body>
+  <h1>Download archive</h1>
+  <p>Haz clic para descargar el archivo</p>
+  <a href="archivo.docx" download>Download archive</a>
+
+  <script>
+    var password = prompt("Ingrese la contraseña");
+
+    if(password === null) {
+      alert("contraseña incorrecta");
+    } else if (password === "contraseña123"){
+      alert("Acceso permitido");
+    } else {
+      alert("Acceso denegado");
+      window.location.href = "https://www.ejemplo.com/acceso-denegado.html";
+    }
+      
+
+  </script>
+
+  
+</body>
+</html>
